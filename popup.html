@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=380">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,300;0,9..40,500;0,9..40,700;1,9..40,400&family=JetBrains+Mono:wght@400;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="popup.css">
+</head>
+<body>
+  <div class="container">
+    <!-- Header -->
+    <header class="header">
+      <div class="logo-row">
+        <div class="logo-icon">
+          <svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M13 2L3 14h9l-1 8 10-12h-9l1-8z"/>
+          </svg>
+        </div>
+        <span class="logo-text">Claude Off-Peak</span>
+        <span class="badge promo-badge" id="promoBadge">PROMO ACTIVE</span>
+      </div>
+      <p class="subtitle">2x usage outside peak hours · Mar 13–27, 2026</p>
+    </header>
+
+    <!-- Status Card -->
+    <div class="status-card" id="statusCard">
+      <div class="status-indicator">
+        <div class="pulse-ring" id="pulseRing"></div>
+        <div class="status-dot" id="statusDot"></div>
+      </div>
+      <div class="status-info">
+        <div class="status-label" id="statusLabel">OFF-PEAK</div>
+        <div class="status-detail" id="statusDetail">2x usage active now</div>
+      </div>
+      <div class="multiplier" id="multiplier">2×</div>
+    </div>
+
+    <!-- Countdown -->
+    <div class="countdown-section" id="countdownSection">
+      <div class="countdown-label" id="countdownLabel">Next peak starts in</div>
+      <div class="countdown-timer">
+        <div class="time-block">
+          <span class="time-value" id="hours">00</span>
+          <span class="time-unit">hrs</span>
+        </div>
+        <span class="time-sep">:</span>
+        <div class="time-block">
+          <span class="time-value" id="minutes">00</span>
+          <span class="time-unit">min</span>
+        </div>
+        <span class="time-sep">:</span>
+        <div class="time-block">
+          <span class="time-value" id="seconds">00</span>
+          <span class="time-unit">sec</span>
+        </div>
+      </div>
+    </div>
+
+    <!-- Schedule -->
+    <div class="schedule-section">
+      <div class="section-header">
+        <svg viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+          <circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/>
+        </svg>
+        <span>Your Local Schedule</span>
+      </div>
+      <div class="schedule-grid" id="scheduleGrid">
+        <!-- Filled by JS -->
+      </div>
+      <div class="tz-info" id="tzInfo"></div>
+    </div>
+
+    <!-- Days Remaining -->
+    <div class="promo-remaining" id="promoRemaining">
+      <div class="remaining-bar">
+        <div class="remaining-fill" id="remainingFill"></div>
+      </div>
+      <div class="remaining-text" id="remainingText"></div>
+    </div>
+
+    <!-- Settings -->
+    <div class="settings-row">
+      <label class="toggle-label">
+        <svg viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+          <path d="M18 8A6 6 0 0 0 6 8c0 7-3 9-3 9h18s-3-2-3-9"/>
+          <path d="M13.73 21a2 2 0 0 1-3.46 0"/>
+        </svg>
+        <span>Notifications</span>
+        <div class="toggle-switch">
+          <input type="checkbox" id="notifToggle" checked>
+          <span class="toggle-slider"></span>
+        </div>
+      </label>
+    </div>
+
+    <!-- Footer -->
+    <footer class="footer">
+      <a href="https://claude.ai" id="openClaude" class="cta-btn">
+        Open Claude
+        <svg viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+          <line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/>
+        </svg>
+      </a>
+    </footer>
+  </div>
+
+  <script src="popup.js"></script>
+</body>
+</html>

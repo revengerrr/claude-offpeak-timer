@@ -1,0 +1,23 @@
+{
+  "manifest_version": 3,
+  "name": "Claude Off-Peak Timer",
+  "version": "1.0.0",
+  "description": "Never miss Claude's 2x off-peak usage window. Auto-detects your timezone, shows live status, countdown timer, and sends notifications.",
+  "permissions": ["alarms", "notifications", "storage"],
+  "action": {
+    "default_popup": "popup.html",
+    "default_icon": {
+      "16": "icons/icon16.png",
+      "48": "icons/icon48.png",
+      "128": "icons/icon128.png"
+    }
+  },
+  "background": {
+    "service_worker": "background.js"
+  },
+  "icons": {
+    "16": "icons/icon16.png",
+    "48": "icons/icon48.png",
+    "128": "icons/icon128.png"
+  }
+}
