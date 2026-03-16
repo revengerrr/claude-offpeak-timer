@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Privacy Policy — Claude Off-Peak Timer</title>
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+      background: #0d0f11;
+      color: #c8cad0;
+      line-height: 1.7;
+      padding: 40px 20px;
+    }
+    .container {
+      max-width: 640px;
+      margin: 0 auto;
+    }
+    h1 {
+      color: #e8eaed;
+      font-size: 28px;
+      margin-bottom: 8px;
+    }
+    .updated {
+      color: #565d66;
+      font-size: 13px;
+      margin-bottom: 32px;
+    }
+    h2 {
+      color: #34d399;
+      font-size: 18px;
+      margin: 28px 0 12px;
+    }
+    p { margin-bottom: 14px; }
+    a { color: #a78bfa; }
+    ul { margin: 8px 0 14px 24px; }
+    li { margin-bottom: 6px; }
+    .footer {
+      margin-top: 48px;
+      padding-top: 20px;
+      border-top: 1px solid rgba(255,255,255,0.06);
+      color: #565d66;
+      font-size: 12px;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h1>Privacy Policy</h1>
+    <p class="updated">Claude Off-Peak Timer · Last updated: March 16, 2026</p>
+
+    <h2>Overview</h2>
+    <p>Claude Off-Peak Timer ("the Extension") is a browser extension that helps users track off-peak usage windows for Claude AI during Anthropic's March 2026 promotion. We are committed to protecting your privacy.</p>
+
+    <h2>Data Collection</h2>
+    <p>The Extension does <strong>not</strong> collect, store, transmit, or share any personal data. Specifically:</p>
+    <ul>
+      <li><strong>No personal information</strong> is collected (name, email, IP address, etc.)</li>
+      <li><strong>No browsing history</strong> or web activity is tracked</li>
+      <li><strong>No analytics</strong> or telemetry data is sent to any server</li>
+      <li><strong>No cookies</strong> or tracking technologies are used</li>
+      <li><strong>No data</strong> is shared with third parties</li>
+    </ul>
+
+    <h2>Local Storage</h2>
+    <p>The Extension stores a single preference locally on your device using Chrome's <code>storage.local</code> API:</p>
+    <ul>
+      <li><strong>Notification preference</strong> — Whether you've enabled or disabled notifications (a boolean value: true/false)</li>
+    </ul>
+    <p>This data never leaves your device and can be cleared by uninstalling the extension.</p>
+
+    <h2>Permissions</h2>
+    <p>The Extension requires the following browser permissions:</p>
+    <ul>
+      <li><strong>alarms</strong> — To schedule periodic checks for off-peak/peak transitions and send timely notifications</li>
+      <li><strong>notifications</strong> — To display desktop alerts when off-peak hours begin or peak hours are approaching</li>
+      <li><strong>storage</strong> — To save your notification preference locally on your device</li>
+    </ul>
+
+    <h2>Timezone Detection</h2>
+    <p>The Extension uses your browser's built-in <code>Intl.DateTimeFormat</code> API to detect your local timezone. This is done entirely within your browser — no timezone or location data is transmitted externally.</p>
+
+    <h2>External Connections</h2>
+    <p>The Extension makes <strong>no network requests</strong>. It operates entirely offline after installation. The only external link is the "Open Claude" button which opens <code>https://claude.ai</code> in a new tab when you click it.</p>
+
+    <h2>Children's Privacy</h2>
+    <p>The Extension does not knowingly collect any information from anyone, including children under the age of 13.</p>
+
+    <h2>Changes to This Policy</h2>
+    <p>If we update this privacy policy, the changes will be reflected on this page with an updated date. Since no data is collected, significant changes are unlikely.</p>
+
+    <h2>Contact</h2>
+    <p>If you have questions about this privacy policy, you can reach us at:</p>
+    <p>GitHub: <a href="https://github.com/revengerrr" target="_blank">@revengerrr</a></p>
+
+    <div class="footer">
+      © 2026 Claude Off-Peak Timer. This extension is not affiliated with or endorsed by Anthropic.
+    </div>
+  </div>
+</body>
+</html>
